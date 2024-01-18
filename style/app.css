@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;800&display=swap");
+
+html {
+  height: 350px;
+}
+
+body {
+  width: 200px;
+  background-color: #2a2a2a;
+  color: white;
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+
+.title p {
+  margin: 0;
+}
+
+svg {
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.on h1 {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.on {
+  background-color: #242424;
+  border: 0;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  margin: 20px auto;
+  margin-bottom: 10px;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#switch {
+  position: absolute;
+  /* hidden */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-top: 20px;
+}
+
+.switch_label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  background: #fff;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+.switch_label:hover {
+  background: #efefef;
+}
+.onf_btn {
+  position: absolute;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  top: 1;
+  border-radius: 20px;
+  background: #2a2a2a;
+  transition: 0.2s;
+
+  left: 2px;
+}
+
+/* checking style */
+#switch:checked + .switch_label {
+  background: rgb(15, 15, 15);
+}
+
+/* move */
+#switch:checked + .switch_label .onf_btn {
+  left: 10px;
+  background: #fff;
+  box-shadow: 1px 2px 3px #00000020;
+}
+
+.info {
+  margin-top: 20px;
+  height: fit-content;
+}
+
+.info p {
+  font-size: 8px;
+  margin: 0;
+}

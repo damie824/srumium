@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Srumium Beta",
+  "version": "0.1",
+  "action": {
+    "default_popup": "html/index.html",
+    "default_icon": "img/srum.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./scripts/index.js"]
+    }
+  ]
+}
